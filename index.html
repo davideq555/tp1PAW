@@ -10,6 +10,14 @@
     <link rel="shortcut icon" href="images/geraltface28.png" type="image/png">
 </head>
 <body>
+    <style>
+        .opacityImage{ 
+	background: rgba(51, 47, 47, 0.15);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+    </style>
         <!-- menu -->
         <nav class="navbar navbar-black navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -33,7 +41,48 @@
             </div>
         </nav>
         <div class="container"> 
-            
+                <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="http://teamviper.site/wp-content/uploads/2021/07/portada-ivar-min.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2>Proyecto TV</h2>
+                          <p>Equipo de e-sport</p>
+                          <a class="btn btn-secondary" href="http://teamviper.site" target="_blank" rel="noopener noreferrer">Ver +</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://casinogwent.com/wp-content/uploads/2022/08/Ruleta-cgc-imag-min.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2>Casino Gwent</h2>
+                          <p>Torneo random</p>
+                          <a class="btn btn-primary" href="http://casinogwent.com" target="_blank" rel="noopener noreferrer">Ver +</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://casinogwent.com/wp-content/uploads/2022/08/CasinoGwentEditTaza-min.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2>App ruleta</h2>
+                          <p>Aplicacion para asiganar barajas</p>
+                          <a class="btn btn-danger" href="http://casinogwent.com/roulette/" target="_blank" rel="noopener noreferrer">Ver +</a>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
         </div>
     <!-- scripts -->
     <script src="js/bootstrap.js"></script>
