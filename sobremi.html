@@ -33,10 +33,41 @@
             </div>
         </nav>
         <div class="container"> 
-            
+            <!-- <button class="btn btn-secondary" onclick="holaMundo();">Algo</button>
+            <br>
+            <div class="row">
+                <form action="" method="post">
+                    <input type="date" name="fechaActual" id="fechaActual" disabled>
+                    <div class="input-group"><label for="" class="input-group-text">Persona: </label><select class="form-select" name="persona" id="persona" onclick="habilitarCategoria();">
+                        <option value="juridica">Juridica</option>
+                        <option value="persona">Persona</option>
+                    </select>
+                    </div>
+                    <select name="juri" id="masInfo" style="visibility:hidden;">
+                        <option value="Categoria1">Categoria 1</option>
+                        <option value="categoria2">Categoria 2</option>
+                    </select>
+                     juridica obliga cargtar un cuadro de texto 
+                    Provincias y localidades
+                    Tildar baces y condiciones para enviar
+
+                    <button></button>
+                    <button type="submit" disabled>Enviar</button>
+                </form>
+            </div> -->
+            <div class="row">
+                <form id="formulario">
+                    <p>Ingresar oracion: </p>
+                    <input type="text" name="oracion" id="oracion">
+                    <p>Cantidad: </p>
+                    <input type="number" name="cant" id="cant" value="0" disabled>
+                    <button onclick="return calcularLetras()">Calcular</button>
+                </form>
+            </div>
         </div>
     <!-- scripts -->
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/myscript.js"></script>
 </body>
 </html>

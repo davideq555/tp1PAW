@@ -11,13 +11,21 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
+    <style>
+        .opacityImage{ 
+	background: rgba(51, 47, 47, 0.15);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+    </style>
         <!-- menu -->
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button>          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -111,8 +119,6 @@
     <!-- scripts -->
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-    <script>
-        feather.replace()
-    </script>
+    <script src="js/bootstrap.esm.js"></script>
 </body>
 </html>
