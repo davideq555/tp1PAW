@@ -1,13 +1,13 @@
 
 //document.getElementById("name").addEventListener("keydown", setName());
-/*let now = new Date();
+let now = new Date();
 document.getElementById("fechaActual").valueAsDate = new Date();
-// function setName(){
-//     let campo = document.getElementById("campo");
-//     console.log(campo);
-//     campo.innerHTML = campo.innerHTML + event.key;
-// }
-/*
+function setName(){
+     let campo = document.getElementById("campo");
+     console.log(campo);
+     campo.innerHTML = campo.innerHTML + event.key;
+}
+
 function habilitarCategoria(){
     let campo = document.getElementById("persona");
     let selected = campo.options[campo.selectedIndex].text;
@@ -16,8 +16,20 @@ function habilitarCategoria(){
     } else {
         document.getElementById("masInfo").style.visibility = "hidden";
     }
-}*/
+}
 
+function habilitarEnvio(){
+    let campo = document.getElementById("termino");
+    console.log(campo)
+    if (campo.value){
+        console.log(document.getElementById("enviar"));
+        document.getElementById("enviar").disabled = false;
+    } else {
+        console.log(document.getElementById("enviar"));
+        document.getElementById("enviar").disabled = true;
+    }
+}
+/*
 function calcularLetras(){
     let oracion = document.getElementById("oracion");
     let cant= document.getElementById("cant");
@@ -33,8 +45,8 @@ function calcularLetras(){
         oracion.value[i]=="u"){
             c++
         }
-    }*/
+    }
     console.log(countVowels);
     cant.value = countVowels;
     return false;
-}
+}*/
